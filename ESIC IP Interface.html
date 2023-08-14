@@ -1,0 +1,908 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0133)https://www.esic.in/employeeportal/IP_Eligibility.aspx?ipNo=epnxfPPhXLkw+jNFbiNmaA==&name=HIV2Dltu2Be6H/5xtJEKnA==&phase=JUGm1Rbj4gM= -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>ESIC IP Interface</title><meta name="google" content="notranslate"><link rel="stylesheet" type="text/css" href="./ESIC IP Interface_files/CSSglobal.css"><link rel="stylesheet" type="text/css" href="./ESIC IP Interface_files/calendar.css"><link rel="stylesheet" type="text/css" href="./ESIC IP Interface_files/csstaskhome.css"><link rel="stylesheet" type="text/css" href="./ESIC IP Interface_files/calpopup.css">
+
+
+  <script type="text/javascript">
+
+      function disableBackButton() {
+          window.history.forward();
+      }
+      setTimeout("disableBackButton()", 0);
+    </script>
+    <script language="javascript" type="text/javascript">
+
+        function getPage() {
+            window.opener = self;
+            window.close();
+
+        }
+        openWins = new Array();
+        curWin = 0;
+
+        function openWin(page) {
+            openWins[curWin++] = window.open(page, '_blank', 'width=2000,height=2000, scrollbars=auto');
+        }
+
+        function closeAll() {
+
+            for (i = 0; i < openWins.length; i++)
+                if (openWins[i] && !openWins[i].closed) openWins[i].close();
+        }
+		
+		
+     </script>
+	 <script src="./ESIC IP Interface_files/logoutjquery.min.js.download" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("body").on('click keypress', function() {
+                ResetThisSession();
+            });
+        });
+
+        var timeInSecondsAfterSessionOut = 1200; // change this to change session time out (in seconds).
+        var secondTick = 0;
+
+        function ResetThisSession() {
+            secondTick = 0;
+        }
+
+        function StartThisSessionTimer() {
+            secondTick++;
+            var timeLeft = ((timeInSecondsAfterSessionOut - secondTick) / 60).toFixed(0); // in minutes
+            timeLeft = timeInSecondsAfterSessionOut - secondTick; // override, we have 30 secs only 
+
+            $("#spanTimeLeft").html(timeLeft);
+
+            if (secondTick > timeInSecondsAfterSessionOut) {
+                clearTimeout(tick);
+                window.location = "Login.aspx";
+                return;
+            }
+            tick = setTimeout("StartThisSessionTimer()", 1000);
+        }
+
+        StartThisSessionTimer();
+        
+    </script>
+	 
+     
+
+<script type="text/Javascript" language="javascript" src="./ESIC IP Interface_files/Clock.js.download"></script>
+<script type="text/Javascript" language="javascript" src="./ESIC IP Interface_files/Common.js.download"></script>
+
+<script type="text/Javascript" language="javascript" src="./ESIC IP Interface_files/dateparse.js.download"></script>
+<script type="text/Javascript" language="javascript" src="./ESIC IP Interface_files/DateFormat.js.download"></script>
+<script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script><script type="text/javascript">Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+</script></head>
+<body onload="disableBackButton()" onunload="closeAll()">
+    <form name="aspnetForm" method="post" action="https://www.esic.in/employeeportal/IP_Eligibility.aspx?ipNo=epnxfPPhXLkw+jNFbiNmaA%3d%3d&amp;name=HIV2Dltu2Be6H%2f5xtJEKnA%3d%3d&amp;phase=JUGm1Rbj4gM%3d" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_Test&#39;)" id="aspnetForm">
+<div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./ESIC IP Interface_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./ESIC IP Interface_files/ScriptResource.axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="./ESIC IP Interface_files/ScriptResource(1).axd" type="text/javascript"></script>
+<script src="./ESIC IP Interface_files/ScriptResource(2).axd" type="text/javascript"></script>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smm', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$HomePageContent$updateTime'], ['ctl00$HomePageContent$timer'], [], 90);
+//]]>
+</script>
+
+    
+    <table id="ctl00_Table1" class="outerTable" cellspacing="0" cellpadding="0" align="Center" border="0" style="border-width:0px;width:100%;border-collapse:collapse;">
+	<tbody><tr>
+		<td align="center" valign="middle" colspan="2"><table id="ctl00_Table2" cellspacing="0" cellpadding="0" align="Center" border="0" style="border-width:0px;height:60px;width:100%;border-collapse:collapse;">
+			<tbody><tr>
+				<td class="tHeadImage" align="left"><img id="ctl00_ESICLogo" src="./ESIC IP Interface_files/Small Logo.jpg" align="absmiddle" style="border-width:0px;"></td><td class="tHeadImage" align="center"></td><td class="tHeadImage" align="right" style="color:White;font-size:13px;padding-right: 10px; font-family: Verdana, Arial, Helvetica, sans-serif">
+                                 <b>Employee Details</b>
+                        </td>
+			</tr><tr>
+				<td align="center" colspan="3" style="height:25px;width:100%;"><table id="ctl00_Table3" cellspacing="0" cellpadding="0" border="0" style="height:100%;width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td class="dataBlock" align="left" style="width:8%;"><span id="ctl00_lblUserId">लॉगिन उपयोगकर्ता:</span></td><td class="dataBlock" align="left" style="width:58%;"><span id="ctl00_loginuser">6106001955</span></td><td class="dataBlock" style="width:23%;"></td><td class="homelink" align="right">
+                                        &nbsp;
+                                         &nbsp;
+                                         &nbsp;
+                                        <input type="submit" name="ctl00$Test" value="Button" id="ctl00_Test" style="display: none"><input type="submit" name="ctl00$dummybutton" value="" id="ctl00_dummybutton" style="border-width:0px;font-weight:bold;height:0px;width:0px;"></td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr>
+				<td colspan="5" style="background-color:White;width:100%;">
+    <table width="100%" border="0" cellpadding="2" align="center" cellspacing="0" id="Table9" rules="none">
+        <tbody><tr class="lastData_Section">
+            <td valign="top" align="left" class="contentTabletd">
+                <table width="100%" border="0" align="center" cellpadding="2" cellspacing="0" class="internalTable" id="tblUser1">
+                    <tbody><tr>
+                        <td class="pageHeader" colspan="10">
+                            <table width="100%">
+                                <tbody><tr>
+                                    <td id="ctl00_HomePageContent_td1" class="pageHeaderText" style="font-size: small; width: 80%">लाभ की पात्रता</td>
+				
+                                         <td class="pageHeader" align="right" style="font-size: small">Language/भाषा: 
+                                        <select name="ctl00$HomePageContent$ddlLanguage" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$HomePageContent$ddlLanguage\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_HomePageContent_ddlLanguage">
+					<option value="en-US">English</option>
+					<option selected="selected" value="hi-IN">हिन्दी</option>
+					<option value="gu-IN">ગુજરાતી</option>
+					<option value="ta-IN">தமிழ்</option>
+					<option value="te-IN">తెలుగు</option>
+					<option value="ml-IN">മലയാളം</option>
+					<option value="mr-IN">मराठी</option>
+					<option value="pa-IN">ਪੰਜਾਬੀ</option>
+					<option value="kn-IN">ಕನ್ನಡ</option>
+					<option value="as-IN">অসমীয়া</option>
+					<option value="ur-PK">اردو</option>
+					<option value="bn-IN">বাংলা</option>
+					<option value="or-IN">ଓଡିଆ</option>
+
+				</select></td>
+                           </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="formlevel border" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody><tr>
+                                    <td id="ctl00_HomePageContent_td2" class="leftTopFormLabel" width="25%">बीमाकृत व्यक्ति संख्या</td>
+				
+                                    <td class="lastFormValue" width="25%">
+                                        <span id="ctl00_HomePageContent_lblipno" style="font-weight:bold;">6106001955</span>
+
+                                    </td>
+                                    <td id="ctl00_HomePageContent_td3" class="leftTopFormLabel" width="25%">बीमाकृत व्यक्ति का नाम</td>
+				
+                                    <td class="lastFormValue" width="25%">
+                                        <span id="ctl00_HomePageContent_lblIpName" style="font-weight:bold;">RAHUL NIMESH</span>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="ctl00_HomePageContent_td4" class="leftTopFormLabel" width="25%" nowrap="nowrap">अवधि</td>
+				
+                                    <td class="lastFormValue" width="25%">
+                                        
+                                        <span id="ctl00_HomePageContent_lblPeriod" style="font-size:Small;">वर्तमान अवधि</span>
+                                    </td>
+                                    <td id="ctl00_HomePageContent_td5" class="leftTopFormLabel" nowrap="nowrap" width="25%">दिनांकित पर रिपोर्ट की गई</td>
+				
+                                    <td width="25%" class="lastFormValue">
+                                        
+                                        <div id="ctl00_HomePageContent_updateTime">
+                                                <div id="ss">
+                                                    <h4>
+                                                        05/08/2023 &nbsp;
+                                                        &nbsp; 10:57:57
+                                                        Hrs</h4>
+                                                </div>
+                                                <span id="ctl00_HomePageContent_timer" style="visibility:hidden;display:none;"></span>
+                                            </div>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="formlevel border">
+                                <tbody><tr id="RowCreate0">
+                                    <td id="ctl00_HomePageContent_td6" colspan="8" class="sectionHeader">हितलाभ अवधि पात्रता</td>
+				
+                                </tr>
+                                <tr class="separator">
+                                    <td class="internalTable" align="center">
+                                        <table class="internalTable border" width="100%" border="0" align="center" cellpadding="2" cellspacing="0">
+                                            <tbody><tr>
+                                                <td id="ctl00_HomePageContent_td7" class="pageHeader" nowrap="nowrap" style="width: 12%">हितलाभ की अंतिम तिथि</td>
+				
+                                                <td id="ctl00_HomePageContent_td8" class="pageHeader" nowrap="nowrap" style="width: 12%">हितलाभ की अंतिम तिथि</td>
+				
+                                                <td id="ctl00_HomePageContent_td9" class="pageHeader" nowrap="nowrap" style="width: 12%">कुल मजदूरी</td>
+				
+                                                <td id="ctl00_HomePageContent_td10" class="pageHeader" style="width: 19%" nowrap="nowrap">कुल कार्य दिवस भुगतान / देय</td>
+				
+                                                <td id="ctl00_HomePageContent_td11" class="pageHeader" style="width: 15%">अंशदान अवधि से </td>
+				
+                                                <td id="ctl00_HomePageContent_td12" class="pageHeader" style="width: 15%">अंशदान अवधि तक</td>
+				
+
+
+                                            </tr>
+                                            <tr>
+                                                <td colspan="8" class="lastFormValue" style="text-align: left; color: Red; font-weight: bold; font-family: Calibri; font-size: medium;">
+
+                                                    <span id="ctl00_HomePageContent_lblmessage"></span>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <div id="ctl00_HomePageContent_divObj">
+                                            <table class="internalTable border" width="100%" border="0" align="center" cellpadding="2" cellspacing="0">
+                                                <tbody><tr id="ctl00_HomePageContent_rowOne" class="leftTopFormLabel">
+					<td class="leftTopFormLabel" style="width: 12%" align="center">
+                                                        <span id="ctl00_HomePageContent_lblBftStDate">01 Jan 2023</span>
+                                                    </td>
+					<td class="leftTopFormLabel" style="width: 12%" align="center">
+                                                        <span id="ctl00_HomePageContent_lblBftEndDate">30 Jun 2023</span>
+                                                    </td>
+					<td class="leftTopFormLabel" style="width: 12%" align="center">
+                                                        <span id="ctl00_HomePageContent_LblAvgEmpWages">0.00</span>
+                                                    </td>
+					<td class="leftTopFormLabel" style="width: 19%" align="center">
+                                                        <span id="ctl00_HomePageContent_LblAvgEmpWkngDays">0</span>
+                                                    </td>
+					<td class="leftTopFormLabel" style="width: 15%" align="center">
+                                                        <span id="ctl00_HomePageContent_lblContPrdFrom">01 Apr 2022</span>
+                                                    </td>
+					<td class="leftTopFormLabel" style="width: 15%" align="center">
+                                                        <span id="ctl00_HomePageContent_lblContPrdTo">30 Sep 2022</span>
+                                                    </td>
+				</tr>
+				
+                                                <tr id="ctl00_HomePageContent_rowTwo" class="leftTopFormLabel">
+					<td class="leftTopFormLabel" style="width: 12%" align="center">
+                                                        <span id="ctl00_HomePageContent_lblBftStDate1">01 Jul 2023</span>
+                                                    </td>
+					<td class="leftTopFormLabel" style="width: 12%" align="center">
+                                                        <span id="ctl00_HomePageContent_lblBftEndDate1">31 Dec 2023</span>
+                                                    </td>
+					<td class="leftTopFormLabel" style="width: 12%" align="center">
+                                                        <span id="ctl00_HomePageContent_LblAvgEmpWages1">19515.00</span>
+                                                    </td>
+					<td class="leftTopFormLabel" style="width: 19%" align="center">
+                                                        <span id="ctl00_HomePageContent_LblAvgEmpWkngDays1">48</span>
+                                                    </td>
+					<td class="leftTopFormLabel" style="width: 15%" align="center">
+                                                        <span id="ctl00_HomePageContent_lblContPrdFrom1">01 Oct 2022</span>
+                                                    </td>
+					<td class="leftTopFormLabel" style="width: 15%" align="center">
+                                                        <span id="ctl00_HomePageContent_lblContPrdTo1">31 Mar 2023</span>
+                                                    </td>
+				</tr>
+				
+                                            </tbody></table>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr id="Tr1">
+                                    <td id="ctl00_HomePageContent_td13" colspan="8" class="sectionHeader">ईएसआईसी लाभ के लिए पात्रता</td>
+				
+                                </tr>
+                                <tr class="separator">
+                                    <td class="internalTable" align="center">
+                                        <table class="internalTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="0">
+                                            <tbody><tr class="pageHeader">
+                                                <td id="ctl00_HomePageContent_td14" class="sectionHeader" width="30%">लाभ प्रकार</td>
+				
+                                                <td id="ctl00_HomePageContent_td15" class="sectionHeader" width="15%">पात्रता की स्थिति</td>
+				
+                                                
+                                                <td id="ctl00_HomePageContent_td16" class="sectionHeader" width="55%">लाभ के लिए अपात्रता के संभावित कारण यदि   पात्रता के स्थिति नहीं है </td>
+				
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_HomePageContent_td17" class="leftTopFormLabel" align="left">## चिकित्सा लाभ</td>
+				
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblMedicalBenefit">नहीं</span>
+                                                </td>
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblMedicalEligibility">IP / IW बीमा योग्य रोजगार में नहीं हैं और अंशदायी शर्तों को संगत अंशदान अवधि में पूरा नहीं किया गया है|</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_HomePageContent_td18" class="leftTopFormLabel" align="left">मातृत्व लाभ</td>
+				
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblMaternityStatus">नहीं</span>
+                                                </td>
+                                                <td class="leftTopFormLabel" align="left">
+                                                    *<span id="ctl00_HomePageContent_lblMaternityEligibility1">IW नहीं है।</span><br>
+                                                    *<span id="ctl00_HomePageContent_lblMaternityEligibility2"> EDD / डिलीवरी की तारीख पर 9 महीने का बीमा योग्य रोजगार।</span><br>
+                                                    *<span id="ctl00_HomePageContent_lblMaternityEligibility3"> 2 पूर्ववर्ती अंशदान अवधि में 70 दिनों से कम का अंशदान।</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_HomePageContent_td19" class="leftTopFormLabel" align="left">अस्वस्थता लाभ</td>
+				
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblSicknessStatus">नहीं</span>
+                                                </td>
+                                                <td class="leftTopFormLabel" align="left">
+                                                    *<span id="ctl00_HomePageContent_lblSicknessEligibility1">नियुक्ति आरएसटी नियुक्ति की तारीख से 9 महीने से कम का बीमा योग्य रोजगार</span><br>
+                                                    *<span id="ctl00_HomePageContent_lblSicknessEligibility2"> संगत योगदान पेनोड में 78 दिनों से कम का योगदान।</span><br>
+                                                    *<span id="ctl00_HomePageContent_lblSicknessEligibility3"> यदि किसी अंशदान अवधि में पहली बार बीमा योग्य रोजगार में प्रवेश किया और इस छोटी अंशदान अवधि मेआधे  से कम दिनों के लिए अंशदान  दिया। </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_HomePageContent_td20" class="leftTopFormLabel" align="left">विस्तारित बीमारी लाभ</td>
+				
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblExtendedSicknessStatus">नहीं</span>
+                                                </td>
+                                                <td class="leftTopFormLabel" align="left">
+                                                    *<span id="ctl00_HomePageContent_lblExtendedSB1">सूचीबद्ध 34 बीमारियों में से कोई भी पीड़ित नहीं है।</span><br>
+                                                    *<span id="ctl00_HomePageContent_lblExtendedSB2"> दो साल से कम लगातार बीमा योग्य रोजगार।</span><br>
+                                                    *<span id="ctl00_HomePageContent_lblExtendedSB3"> चार अंशदान अवधि (दो वर्ष)  में 156 दिनों से कम अंशदान दिया गया।</span><br>
+                                                    *<span id="ctl00_HomePageContent_lblExtendedSB4"> चार पूर्ववर्ती अंशदान अवधि में से किसी एक में SB के लिए हकदार नहीं है।</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_HomePageContent_td21" class="leftTopFormLabel" align="left">संवर्धित बीमारी लाभ</td>
+				
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblEnhancedBenefitStatus">नहीं</span>
+                                                </td>
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblEnhancedBenefitEligibility">अस्वस्थता लाभ के लिए पात्र नहीं</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_HomePageContent_td22" class="leftTopFormLabel" align="left"># बीमाकृत व्यक्ति के लिए सुपर स्पेशलिटी</td>
+				
+                                                <td class="leftTopFormLabel" align="left">
+                                                    
+                                                    <span id="ctl00_HomePageContent_lblSuperSpecialityStatus1">नहीं</span>
+                                                </td>
+
+                                                <td class="leftTopFormLabel" align="left">
+                                                    *<span id="ctl00_HomePageContent_lblSuperSpecialityEligibility1">पंजीकरण की तारीख से छह महीने की सेवा पूरी नहीं की।</span><br>
+                                                    *<span id="ctl00_HomePageContent_lblSuperSpecialityEligibility2">अंशदान अवधि में 78 दिनों से कम का योगदान।</span><br>
+
+
+                                                </td>
+                                                <td class="leftTopFormLabel" align="left">&nbsp;   
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_HomePageContent_td23" class="leftTopFormLabel" align="left"># परिवार के लिए सुपर स्पेशलिटी</td>
+				
+                                                <td class="leftTopFormLabel" align="left">
+                                                    
+                                                    <span id="ctl00_HomePageContent_lblsuperspecialtyFamily1">नहीं</span>
+                                                </td>
+                                                <td class="leftTopFormLabel" align="left">
+                                                    *<span id="ctl00_HomePageContent_lblSuperSpecialityEligibility3"> पंजीकरण की तारीख से सेवा का एक वर्ष पूरा नहीं हुआ।</span><br>
+                                                    *<span id="ctl00_HomePageContent_lblSuperSpecialityEligibility4">  दो अंशदान अवधि में से प्रत्येक में 78 दिनों से कम का अंशदान।</span>
+                                                </td>
+                                                <td class="leftTopFormLabel" align="left">&nbsp; 
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_HomePageContent_td24" class="leftTopFormLabel" align="left">अस्थायी विकलांगता लाभ</td>
+				
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblTdbStatus">हाँ</span>
+                                                </td>
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblTDBEligibility">ईएसआई अधिनियम के अनुसार रोजगार चोट या व्यावसायिक रोग के कारण अक्षमता।</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_HomePageContent_td25" class="leftTopFormLabel" align="left">अस्थायी विकलांगता लाभ</td>
+				
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblPdbStatus">हाँ</span>
+                                                </td>
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblPDBEligibility">ईएसआई अधिनियम के अनुसार रोजगार चोट या व्यावसायिक रोग के कारण अक्षमता।</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_HomePageContent_td26" class="leftTopFormLabel" align="left">आश्रित लाभ</td>
+				
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblDependantStatus">हाँ</span>
+                                                </td>
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblDBEligibility">बीमाकृत व्यक्ति की मृत्यु ईएसआई अधिनियम के अनुसार रोजगार चोट या व्यावसायिक रोग के कारण नहीं है।</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_HomePageContent_td27" class="leftTopFormLabel" align="left">आर.जी.एस.के. यो.</td>
+				
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblRgskystatus">नहीं</span>
+                                                </td>
+                                                <td class="leftTopFormLabel" align="left">
+                                                    *<span id="ctl00_HomePageContent_lblRGSKYEligibility1">आईडी अधिनियम के तहत छंटनी के कारण बीमा योग्य रोजगार के नुकसान की तारीख पर एक आईपी / आईडब्ल्यू नहीं, आईडी अधिनियम के तहत कारखाने / प्रतिष्ठान को बंद करना या गैर-रोजगार की चोट से उत्पन्न 40% से कम नहीं की स्थायी अमान्यता।</span><br>
+                                                    *<span id="ctl00_HomePageContent_lblRGSKYEligibility2"> रोजगार के नुकसान से पहले तीन वर्ष से कम (एक वर्ष = 156 दिन) का भुगतान / देय।</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_HomePageContent_td28" class="leftTopFormLabel" align="left">31-10-2018 को बीमाकृत व्यक्ति के वार्ड का प्रमाण पत्र </td>
+				
+                                                <td class="leftTopFormLabel" align="left">
+                                                    <span id="ctl00_HomePageContent_lblWardofIPStatus">हाँ</span>&nbsp;***
+                                                </td>
+                                                <td class="leftTopFormLabel" align="left">
+                                                    *<br>
+                                                    *
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_HomePageContent_td29" class="leftTopFormLabel" colspan="4">
+                                                    <div style="margin-left: 10px;">
+                                                        <span class="mandatoryField" style="margin-left: 10px;"></span>
+                                                        <br>
+                                                        ***<span id="ctl00_HomePageContent_lbleligibility1"> यह पात्रता स्थिति केवल सिस्टम में ऑनलाइन पंजीकरण की तारीख पर आधारित है।</span>
+                                                        
+                                                        <br>
+                                                        *<span id="ctl00_HomePageContent_lbleligibility2"> सूची विस्तृत नहीं है। अधिक जानकारी के लिए कृपया नजदीकी शाखा कार्यालय या www.esic.nic.in पर जाएं। यहां दिखाई गई पात्रता की स्थिति आज की तारीख में है और आगे मेडिकल सर्टिफिकेट और / या अन्य शर्तों के अधीन है।</span>
+                                                        
+
+<br>
+                                                        <span id="ctl00_HomePageContent_lbleligibility4"> ## The eligibility shown here based on the circular number V-14/11/6/2018/Med.I Misc  dated 11.03.2021</span>
+<br>
+                                                        <span id="ctl00_HomePageContent_lbleligibility5"># Eligibility shall be subject to decision/discretion of the treating clinician. </span>
+                                                    </div>
+                                                </td>
+				
+                                            </tr>
+
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pageFooter1">
+                                        <input type="submit" name="ctl00$HomePageContent$btnCancel" value="निरस्त करें" onclick="window.close();" id="ctl00_HomePageContent_btnCancel" class="btn">
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+
+    </tbody></table>
+</td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table>
+    <div id="footersection">
+        <table id="ctl00_Table4" cellspacing="0" cellpadding="0" align="Center" border="0" style="border-width:0px;height:60px;width:100%;border-collapse:collapse;">
+	<tbody><tr class="dBlockFooter" style="background-color:White;">
+		<td id="ctl00_footer" class="dBlockFooter" colspan="5"><span id="ctl00_lblDisclaimer">अस्वीकरण: कॉपीराइट © 2021,क॰रा॰बी॰ निगम, भारत। सर्वाधिकार  सुरक्षित। 1024 x 768 पिक्सल्स में स्पष्ट दृश्यता , साइट अनुरक्षण : क॰रा॰बी॰ नि॰|  सीएमएस कम्प्युटर लिमिटेड  द्वारा डिज़ाइन तथा डेवेलप । </span><span id="ctl00_lblIP" class="footer">बीमाकृत व्यक्ति</span><span id="ctl00_lblIPAddress" class="footer">38</span></td>
+	</tr>
+</tbody></table>
+    </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":1000,"uniqueID":"ctl00$HomePageContent$timer"}, null, null, $get("ctl00_HomePageContent_timer"));
+});
+//]]>
+</script>
+<span style="display: none !important;"><input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""></span><span style="display: none !important;"><input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""></span><span style="display: none !important;"><input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value=""></span><span style="display: none !important;"><input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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"></span></form>
+
+
+<script type="tgodateext/javascript">
+    godate();
+    javascript: window.history.forward(-1);
+
+    function doClick(field, event) {
+        var key;
+
+        if (event.keyCode == 13) {
+            var btn = document.getElementById(field);
+            btn.click();
+            }
+    }
+</script>
+
+<script type="text/javascript">
+    javascript: window.history.forward(1);
+    function doClick(field, event) {
+        var key;
+
+        if (event.keyCode == 13) {
+            //Get the button the user wants to have clicked
+            var btn = document.getElementById(field);
+            //alert(btn.id);
+            btn.click();
+
+        }
+    }
+    currentServerDate = '05/08/2023'
+    dateSeperator = '/'
+    godate();
+    javascript: window.history.forward(1);
+    function doClick(field, event) {
+        var key;
+
+        if (event.keyCode == 13) {
+            //Get the button the user wants to have clicked
+            var btn = document.getElementById(field);
+            //alert(btn.id);
+            btn.click();
+
+        }
+    }
+</script>
+
+
+
+
+<audio class="audio-output" style="display: none;"></audio><div id="volume-booster-visusalizer">
+                    <div class="sound">
+                        <div class="sound-icon"></div>
+                        <div class="sound-wave sound-wave_one"></div>
+                        <div class="sound-wave sound-wave_two"></div>
+                        <div class="sound-wave sound-wave_three"></div>
+                    </div>
+                    <div class="segments-box">
+                        <div data-range="1-20" class="segment"><span></span></div>
+                        <div data-range="21-40" class="segment"><span></span></div>
+                        <div data-range="41-60" class="segment"><span></span></div>
+                        <div data-range="61-80" class="segment"><span></span></div>
+                        <div data-range="81-100" class="segment"><span></span></div>
+                    </div>
+                </div></body></html>

@@ -1,0 +1,42 @@
+function godate() {
+    var timestuff = new Date();
+    var daystuff = new Date();
+    
+		var weekday=new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+		var monthname=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+		c_year = timestuff.getYear();
+		if (c_year < 1000)
+		c_year+=1900;
+
+        c_weekday = weekday[daystuff.getDay()] + " ";
+        c_month = monthname[daystuff.getMonth()] + " ";
+        c_day = daystuff.getDate() + " ";
+        c_hour = timestuff.getHours();
+        c_minute = timestuff.getMinutes();
+        c_second = timestuff.getSeconds();
+		if (c_hour >= 12) {
+			c_part = " PM";
+		} else {
+			c_part = " AM";
+		}
+		if (c_hour > 12) {
+			c_hour -= 12;
+		}
+		if (c_hour == 0) {
+			c_hour = 12;
+		}
+		if (c_minute < 10) {
+			c_minute = "0" + c_minute;
+		}
+		if (c_second < 10) {
+			c_second = "0" + c_second;
+        }
+        
+        var dateTime = document.getElementById("raw");
+        if (dateTime != null) {
+            dateTime.innerHTML = c_weekday + c_day + c_month + c_year + ", " + c_hour + ":" + c_minute + ":" + c_second + c_part;
+        }
+//document.write = c_weekday + c_day + c_month + c_year + ", " + c_hour + ":" + c_minute + ":" + c_second + c_part;
+
+setTimeout('godate ();', 1000);
+}
